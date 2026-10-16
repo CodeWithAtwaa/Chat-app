@@ -64,3 +64,21 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+
+
+
+/* Import Flux UI Layout Theme Stylesheet */
+@import "../../vendor/livewire/flux/dist/flux.css";
+
+/* Tell Tailwind v4 where to scan for classes (Blade and Flux files) */
+@source "../../resources/views/**/*.blade.php";
+@source "../../vendor/livewire/flux/**/*.blade.php";
+
+/* Configure proper dark mode compatibility rules for Flux components */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Optional: Set up Inter as your primary font theme if desired */
+@theme {
+    --font-sans: "Inter", sans-serif;
+}
