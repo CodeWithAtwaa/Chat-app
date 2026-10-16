@@ -21,7 +21,7 @@ Follow these sequential steps to get the application up and running locally:
 
 ### 1. Clone the Repository
 ```sh
-git clone <repository-url>
+git clone https://github.com/CodeWithAtwaa/Chat-app.git
 cd Chat-app
 ```
 
